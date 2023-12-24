@@ -18,7 +18,7 @@ header {
 }
 .navBarLinks{
   background-color: #5F2EEA;
-  min-height: 100vh;
+  position: absolute;
   padding: 10px 40px;
 }
 .navBarLinks a:not(:last-child) {
