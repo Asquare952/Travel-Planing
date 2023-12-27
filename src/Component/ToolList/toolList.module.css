@@ -42,9 +42,15 @@
   line-height: 30px; 
 }
 .right p {
-  width: 315px;
+  width: 355px;
   height: 110px;
-  font-size: 15px;
+  font-size: 17px;
+}
+}
+@media (max-width: 320px) {
+  
+  .right p {
+  width: 331px;
 }
 }
 @media (max-width: 280px) {
@@ -58,5 +64,84 @@
   width: 262px;
   height: 110px;
   font-size: 13px;
+}
+}
+/* Bootom */
+.toolListBottom{
+  margin-top: 1rem;
+}
+.bottomContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.bottomCard{
+  max-width: 500px;
+  width: 100%;
+  margin: 0 1rem  ;
+  border: 1px solid #e4daff;
+  padding-bottom: 100px;
+  height: 350px;
+  margin: 35px 0;
+  border-radius: 20px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.content h4 {
+  width: 295px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.content p {
+  width: 295px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.content img {
+  display: block;
+  /* margin-top: 1rem; */
+  max-width: 270px;
+  width: 100%;
+  /* width: 180px; */
+}
+@media (min-width: 800px) {
+  .bottomCard{
+
+  max-width: 250px;
+  width: 100%;
+}
+}
+@media (max-width: 500px) {
+  .bottomContainer{
+  flex-direction: column;
+}
+.bottomCard{
+  height: 390px;
+}
+}
+@media (max-width: 360px) {
+  .bottomCard{
+  height: 390px;
+}
+}
+@media (max-width: 320px) {
+  .bottomCard{
+  height: 380px;
 }
 }
