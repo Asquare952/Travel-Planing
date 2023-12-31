@@ -3,6 +3,7 @@ import NavBar from "../../Component/header/NavBar";
 import Hero from "../../Component/Hero/Hero"
 import Review from "../../Component/Review/Review";
 import ToolList from "../../Component/ToolList/ToolList";
+import PhotoGallery from "../../Component/PhotoGalla/PhototGalla";
 const Home = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const Home = () => {
         <Hero />
         <Review />
         <ToolList/>
+        <PhotoGallery/>
       </div>
     </>
   );

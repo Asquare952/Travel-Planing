@@ -1,4 +1,4 @@
-const Services = () => {
+const Privacy = () => {
   return ( 
     <>
     <div>
@@ -8,4 +8,4 @@ const Services = () => {
    );
 }
  
-export default Services;
+export default Privacy;

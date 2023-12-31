@@ -1,3 +1,6 @@
+.toolList{
+  min-height: 80vh;
+}
 .title h4 {
   height: 60px;
   font-size: 16px;
@@ -22,7 +25,7 @@
   letter-spacing: 1px;
 }
 .right p {
-  width: 395px;
+  width: 437px;
   height: 110px;
   color: #000000;
   font-size: 16px;

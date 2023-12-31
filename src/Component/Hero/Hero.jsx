@@ -1,4 +1,5 @@
 import HeroImg from "../../img/boarding.png"
+import { Link } from "react-router-dom";
 import Styles from "./hero.module.css"
 const Hero = () => {
   return (
@@ -12,15 +13,19 @@ const Hero = () => {
             <div className={Styles.heroLeftContent}>
               <h4>Plan your next big trip overseas.</h4>
               <div className={Styles.heroBtn}>
-                <button>Begin plans</button>
-                <button>Review Plans</button>
+                <Link to="/src/pages/Plans" >
+                  <button>Begin plans</button>
+                </Link>
+                <Link to="/">
+                  <button>Review Plans</button>
+                </Link>
               </div>
             </div>
           </div>
           {/* right */}
           <div className={Styles.heroRight}>
             <div className={Styles.heroRightContent}>
-              <img src={HeroImg} alt="" className={Styles.heroImg}/>
+              <img src={HeroImg} alt="" className={Styles.heroImg} />
             </div>
           </div>
         </div>
