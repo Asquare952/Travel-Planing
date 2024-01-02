@@ -13,7 +13,7 @@ const Hero = () => {
             <div className={Styles.heroLeftContent}>
               <h4>Plan your next big trip overseas.</h4>
               <div className={Styles.heroBtn}>
-                <Link to="/src/pages/Plans" >
+                <Link to="/Plans" >
                   <button>Begin plans</button>
                 </Link>
                 <Link to="/">
