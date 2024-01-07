@@ -5,7 +5,7 @@ import Money from "../../img/money.png"
 const ToolList = () => {
   return (
     <>
-      <div className={Styles.toolList} id={Styles.toolList}>
+      <section className={Styles.toolList} id={Styles.toolList}>
         <div className={Styles.toolListContent}>
           <div className={Styles.title}>
             <h4>Tool List</h4>
@@ -53,7 +53,7 @@ const ToolList = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

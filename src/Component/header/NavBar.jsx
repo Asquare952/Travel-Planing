@@ -12,7 +12,7 @@ const NavBar = () => {
 
   const [servicesToggle, setServicesToggle] = useState(false);
   const servicestoggler = () => {
-    setMenuToggle(!servicesToggle);
+    setServicesToggle(!servicesToggle);
   };
 
   const IconStyle = styled(FiMenu)`
@@ -49,45 +49,40 @@ const NavBar = () => {
               </Link>
             </li>
 
-            <li>
-              {servicesToggle ? (
-                <Link
-                  to=""
-                  onClick={servicestoggler}
-                  className={Styles.navItem}
-                >
-                  Services
-                </Link>
-              ) : (
-                <ul>
-                  <li>
-                    <Link to="/" className={Styles.navItem}>
-                      Planning
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className={Styles.navItem}>
-                      Financing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className={Styles.navItem}>
-                      Purchasing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className={Styles.navItem}>
-                      Reviewing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className={Styles.navItem}>
-                      Flying
-                    </Link>
-                  </li>
-                </ul>
-              )}
-            </li>
+            {servicesToggle ? (
+              <ul>
+                <li>
+                  <Link to="/" className={Styles.navItem}>
+                    Planning
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className={Styles.navItem}>
+                    Financing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className={Styles.navItem}>
+                    Purchasing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className={Styles.navItem}>
+                    Reviewing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className={Styles.navItem}>
+                    Flying
+                  </Link>
+                </li>
+              </ul>
+            ) : (
+              <li>
+                <Link onClick={servicestoggler}>Services</Link>
+              </li>
+            )}
+
             <li>
               <Link to="" className={Styles.navItem}>
                 Continents

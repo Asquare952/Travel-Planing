@@ -1,0 +1,141 @@
+.testimonalsContainer{
+  min-height: 95vh;
+}
+.title h4 {
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #BCA4FF;
+}
+.topContent h4 {
+  width: 515px;
+  height: 108px;
+  color: #4e4b66;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 104.167% */
+  letter-spacing: 1px;
+}
+@media (max-width: 500px) {
+.topContent h4 {
+  width: 325px;
+  height: 108px;
+  font-size: 29px;
+  line-height: 30px; 
+}
+}
+@media (max-width: 280px) {
+  .topContent h4 {
+  width: 270px;
+  height: 108px;
+  font-size: 25px;
+  line-height: 30px; 
+}
+}
+/* Bootom */
+.testimonals{
+  margin-top: 3rem;
+}
+.bottomContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.testimonalCard{
+  max-width: 300px;
+  width: 100%;
+  margin: 0 1rem  ;
+  border: 1px solid #e4daff;
+  padding-bottom: 100px;
+  height: 340px;
+  margin: 35px 0;
+  border-radius: 20px;
+  position: relative;
+}
+.testimonalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.testimonalImg {
+  position: absolute;
+  bottom: 18.5rem;
+  left: 6.6rem;
+}
+.testimonalImg img {
+  display: block;
+  max-width: 103px;
+  width: 100%;
+}
+.testimonal {
+  padding-top: 3rem;
+}
+.nameAndPlaceOfVisit h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  letter-spacing: 0.75px;
+  color: #5f2eea;
+}
+hr {
+  color: #d9dbe9;
+  margin: 0px 40px;
+}
+.nameAndPlaceOfVisit p {
+  color: #5f2eea;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 1rem;
+  letter-spacing: 0.75px;
+}
+.paraBottom {
+  padding-top: 10px;
+  width: 303px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  /* padding: 15px 25px; */
+  letter-spacing: 0.75px;
+  line-height: 30px;
+}
+/* @media (min-width: 800px) {
+  .testimonalCard{
+
+  max-width: 250px;
+  width: 100%;
+}
+} */
+@media (max-width: 500px) {
+  .bottomContainer{
+  flex-direction: column;
+}
+.testimonalCard{
+  max-width: 400px;
+  width: 100%;
+  /* height: 390px; */
+}
+/* .paraBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 350px;
+} */
+}
+@media (max-width: 360px) {
+  .bottomCard{
+  height: 390px;
+}
+}
+@media (max-width: 320px) {
+  .bottomCard{
+  height: 380px;
+}
+}

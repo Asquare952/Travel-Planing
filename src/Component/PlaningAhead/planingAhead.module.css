@@ -45,7 +45,7 @@ ul li {
   letter-spacing: 0.75px;
   color: #4E4B66;
 }
-ul li:not(:last-child) {
+.planingAhead  li:not(:last-child) {
   margin-bottom: 2rem;
 }
 .left ul li:nth-child(1), .left ul li:nth-child(3){
@@ -67,12 +67,12 @@ ul li:not(:last-child) {
   margin-top: 5rem;
 }
 .left ul li:nth-child(1), .left ul li:nth-child(3){
-  padding-left: 50px;
-  width: 300px;
+  padding-left: 100px;
+  width: 330px;
 }
 .left ul li:nth-child(2){
-  padding-right: 100px;
-  width: 350px;
+  padding-left: 55px;
+  width: 310px;
 }
 .right ul li:nth-child(1), .right ul li:nth-child(3){
   padding-left: 50px;
