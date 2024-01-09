@@ -1,9 +1,8 @@
-import NavBar from "../../Component/header/NavBar";
+import Styles from "./plans.module.css"
 const Plans = () => {
   return (
     <>
-      <NavBar />
-      <div></div>
+
     </>
   );
 }

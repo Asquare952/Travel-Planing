@@ -105,9 +105,7 @@
   .bottomContainer {
     flex-direction: column;
   }
-  /* .bottomCard {
-    height: 390px;
-  } */
+  
 }
 @media (max-width: 360px) {
   /* .bottomCard {
@@ -115,6 +113,10 @@
   } */
 }
 @media (max-width: 320px) {
+  .bottomCard {
+    max-width: 340px;
+    width: 100%;
+  }
   /* .bottomCard {
     height: 380px;
   } */

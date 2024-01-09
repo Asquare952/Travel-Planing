@@ -1,5 +1,5 @@
 .planingAhead {
-  min-height: 50vh;
+  min-height: 100vh;
 }
 .title h4 {
   height: 60px;
@@ -32,11 +32,11 @@
   margin-top: 5rem;
 }
 .middle img{
-  max-width: 861.586px;
+  max-width: 891.586px;
   width: 100%;
-  height: 400px;
+  height: 430px;
 }
-ul li {
+.contents li {
   width: 263px;
   height: 140px;
   font-size: 18px;
@@ -50,7 +50,7 @@ ul li {
 }
 .left ul li:nth-child(1), .left ul li:nth-child(3){
   padding-left: 5rem;
-  width: 350px;
+  width: 300px;
 }
 .right ul li:nth-child(2){
   padding-left: 50px;
@@ -81,5 +81,15 @@ ul li {
 .right ul li:nth-child(2){
   padding-left: 100px;
   width: 350px;
+}
+}
+@media (max-width: 320px) {
+  /* .left ul li:nth-child(1), .left ul li:nth-child(3){
+  padding-left: 70px;
+  width: 330px;
+} */
+.left ul li:nth-child(2){
+  padding-left: 50px;
+  width: 310px;
 }
 }

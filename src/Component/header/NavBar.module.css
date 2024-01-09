@@ -1,7 +1,8 @@
 header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #BCA4FF;
+  /* background-color: #504c5a; */
+  border-bottom: 1px solid #bca4ff;
   padding: 25px 75px;
   align-items: center;
   text-align: center;
@@ -10,7 +11,7 @@ header {
   top: 0;
   /* z-index: 999; */
 }
-ul li{
+ul li {
   list-style: none;
 }
 .logo a {
@@ -18,10 +19,10 @@ ul li{
   font-weight: 700;
   text-decoration: none;
   /* line-height: 55px; */
-  color: #5F2EEA;
+  color: #5f2eea;
 }
-.navBarLinks{
-  background-color: #5F2EEA;
+.navBarLinks {
+  background-color: #5f2eea;
   position: absolute;
   /* top: 5rem; */
   padding: 10px 40px;
@@ -41,7 +42,7 @@ ul li{
 } */
 /* media quaery */
 @media (max-width: 500px) {
-  header{
+  header {
     padding-left: 10px;
     padding-right: 5px;
   }
