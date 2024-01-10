@@ -30,12 +30,11 @@ ul li {
   width: 100%;
 }
 .navBarLinks li:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 .navBarLinks a {
   text-decoration: none;
-  /* color: #fff; */
-  color: black;
+  color: #fff;
 }
 /* hr{
   color: #BCA4FF;

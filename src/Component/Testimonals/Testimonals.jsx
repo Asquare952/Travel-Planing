@@ -7,7 +7,7 @@ const Testimonals = () => {
     <>
       <section
         className={Styles.testimonalsContainer}
-        id={Styles.testimonalsContainer}
+        ref={Testimonals}
       >
         <div className={Styles.title}>
           <h4>Testimonals</h4>

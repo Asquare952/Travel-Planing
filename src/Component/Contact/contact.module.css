@@ -1,5 +1,5 @@
 .contactContainer {
-  min-height: 50vh;
+  min-height: 60vh;
 }
 .contactContent {
   display: flex;
@@ -17,7 +17,7 @@
   max-width: 605px;
   width: 100%;
   /* height: 99px; */
-text-align: center;
+  text-align: center;
   font-size: 48px;
   font-weight: 700;
   line-height: 50px; /* 104.167% */
@@ -25,14 +25,26 @@ text-align: center;
   padding-top: 3rem;
   /* padding-left: 50px; */
 }
-.contactBtn{
+.contactBtn {
   width: 100%;
-    border: none;
+  border: none;
   border: 1px solid #fcfcfc;
   padding: 10px 50px;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   border-radius: 5rem;
   background-color: #2a00a2;
   color: #fcfcfcfc;
   cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  .para {
+  max-width: 605px;
+  width: 100%;
+  font-size: 28px;
+}
+.contactContent {
+  
+  width: 100%;
+  height: 350px;
+}
 }

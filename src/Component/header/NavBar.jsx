@@ -1,13 +1,26 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
 import { IoCloseSharp } from "react-icons/io5";
 import Styles from "./NavBar.module.css";
+
 const NavBar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   const toggler = () => {
     setMenuToggle(!menuToggle);
+  };
+  const ToolList = useRef(null);
+  const PhotoGallery = useRef(null);
+  const PlaningAhead = useRef(null);
+  const Testimonals = useRef(null);
+  const Contact = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
   };
 
   const [servicesToggle, setServicesToggle] = useState(false);
@@ -51,29 +64,37 @@ const NavBar = () => {
 
             {servicesToggle ? (
               <ul>
+                <li></li>
                 <li>
-                  <Link to="/" className={Styles.navItem}>
-                    Planning
+                  <Link
+                    onClick={() => scrollToSection(ToolList)}
+                    className={Styles.navItem}
+                  >
+                    Tool List
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className={Styles.navItem}>
-                    Financing
+                  <Link
+                    onClick={() => scrollToSection(PhotoGallery)}
+                    className={Styles.navItem}
+                  >
+                    Photo Gallery
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className={Styles.navItem}>
-                    Purchasing
+                  <Link
+                    onClick={() => scrollToSection(PlaningAhead)}
+                    className={Styles.navItem}
+                  >
+                    Planing Ahead
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className={Styles.navItem}>
-                    Reviewing
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/" className={Styles.navItem}>
-                    Flying
+                  <Link
+                    onClick={() => scrollToSection(Testimonals)}
+                    className={Styles.navItem}
+                  >
+                    Testimonals
                   </Link>
                 </li>
               </ul>
@@ -89,7 +110,10 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="" className={Styles.navItem}>
+              <Link
+                onClick={() => scrollToSection(Contact)}
+                className={Styles.navItem}
+              >
                 Contact
               </Link>
             </li>

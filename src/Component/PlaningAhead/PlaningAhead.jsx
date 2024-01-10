@@ -3,7 +3,7 @@ import AirHelp from "../../img/airhelp.png"
 const PlaningAhead = () => {
   return (
     <>
-      <section className={Styles.planingAhead} id={Styles.PlaningAhead}>
+      <section className={Styles.planingAhead} ref={PlaningAhead}>
         <div className={Styles.title}>
           <h4>Planing Ahead</h4>
         </div>

@@ -1,7 +1,7 @@
 .footer {
   padding-bottom: 20px;
 }
- ul li {
+.footerContent ul li {
   list-style: none;
   margin-top: 5px;
   padding: 10px 0px;
@@ -9,6 +9,11 @@
   font-weight: 400;
   line-height: 24px;
   color: #6e7191;
+  cursor: pointer;
+  transition: all ease-in-out 10sec;
+}
+.footerContent ul li:hover {
+  padding-left: 10px;
 }
 .travelulu h4 {
   font-size: 20px;

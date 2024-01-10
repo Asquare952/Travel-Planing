@@ -5,7 +5,7 @@ import Money from "../../img/money.png"
 const ToolList = () => {
   return (
     <>
-      <section className={Styles.toolList} id={Styles.toolList}>
+      <section className={Styles.toolList} ref={ToolList}>
         <div className={Styles.toolListContent}>
           <div className={Styles.title}>
             <h4>Tool List</h4>
