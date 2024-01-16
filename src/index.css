@@ -8,6 +8,9 @@ body{
   background-color: #F7F7FC;
   /* border: 1px solid red; */
 }
+html{
+  scroll-behavior: smooth;
+}
 a{
   display: block;
   text-decoration: none;

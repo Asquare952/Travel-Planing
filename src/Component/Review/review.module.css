@@ -35,6 +35,28 @@
   line-height: 28px; /* 175% */
   letter-spacing: 0.75px;
 }
+@media (max-width: 1028px) {
+  .Review {
+    margin-top: 25px;
+    padding-left: -2rem;
+  }
+  .reviewContent {
+    flex-direction: column;
+    /* margin-left: -5rem; */
+  }
+  .reviewItem h4 {
+    font-size: 30px;
+  }
+  /* .img img{
+  
+  display: none;
+} */
+  .reviewItem p {
+    width: 260px;
+    height: 90px;
+    font-size: 17px;
+  }
+}
 @media (max-width: 500px) {
   .Review {
     margin-top: 25px;

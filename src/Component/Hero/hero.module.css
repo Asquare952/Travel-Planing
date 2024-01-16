@@ -23,7 +23,7 @@
   padding-top: 1rem;
   gap: 1rem;
 }
-button {
+.btnHero {
   width: 100%;
   display: block;
   border: none;
@@ -35,24 +35,29 @@ button {
   text-transform: uppercase;
   cursor: pointer;
 }
-button:hover{
+.btnHero:hover {
   color: #f7f7fc;
   background-color: #5f2eea;
 }
 .heroImg {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: block;
   margin-top: 1rem;
   max-width: 770px;
   width: 100%;
-  height: auto;
+}
+@media (max-width: 1280px) {
+  .heroContent {
+  flex-direction: column-reverse;
+}
+
 }
 @media (max-width: 500px) {
-  .heroContent {
+  /* .heroContent {
     flex-direction: column-reverse;
-  }
+  } */
   .heroLeft {
     margin-top: 2rem;
   }

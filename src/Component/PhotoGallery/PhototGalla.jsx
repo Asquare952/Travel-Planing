@@ -5,7 +5,7 @@ import Toy from "../../img/toy on water.png"
 const PhotoGallery = () => {
   return (
     <>
-      <div className={Styles.PhotoGallery} ref={PhotoGallery}>
+      <div className={Styles.PhotoGallery} id="photoGallary">
         <div className={Styles.PhotoGalleryContent}>
           <div className={Styles.title}>
             <h4>Photo Gallery</h4>
@@ -29,7 +29,7 @@ const PhotoGallery = () => {
               <div className={Styles.bottomCard}>
                 <div className={Styles.content}>
                   <img src={Bitch} alt="" className={Styles.imgOne} />
-              </div>
+                </div>
               </div>
               <div className={Styles.bottomCard}>
                 <div className={Styles.content}>

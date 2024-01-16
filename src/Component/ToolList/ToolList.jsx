@@ -5,7 +5,7 @@ import Money from "../../img/money.png"
 const ToolList = () => {
   return (
     <>
-      <section className={Styles.toolList} ref={ToolList}>
+      <section className={Styles.toolList}  id='toolList'>
         <div className={Styles.toolListContent}>
           <div className={Styles.title}>
             <h4>Tool List</h4>
@@ -31,7 +31,7 @@ const ToolList = () => {
                   <img src={Clock} alt="" className={Styles.imgOne} />
                   <h4>Plan Trip Dates</h4>
                   <p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <button class="card-btn">LEARN MORE</button>
+                  <button className={Styles.cardBtn}>LEARN MORE</button>
                 </div>
               </div>
               <div className={Styles.bottomCard}>
@@ -39,7 +39,7 @@ const ToolList = () => {
                   <img src={PlaneAndMoney} alt="" class="imgTwo" />
                   <h4>Plan Trip Dates</h4>
                   <p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <button class="card-btn">LEARN MORE</button>
+                  <button className={Styles.cardBtn}>LEARN MORE</button>
                 </div>
               </div>
               <div className={Styles.bottomCard}>
@@ -47,7 +47,7 @@ const ToolList = () => {
                   <img src={Money} alt="" class="imgOne" />
                   <h4>Plan Trip Dates</h4>
                   <p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <button class="card-btn">LEARN MORE</button>
+                  <button className={Styles.cardBtn}>LEARN MORE</button>
                 </div>
               </div>
             </div>

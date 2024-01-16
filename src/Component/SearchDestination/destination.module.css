@@ -1,0 +1,70 @@
+.findDeals {
+  padding: 50px 0;
+  min-height: 30vh;
+  /* border-bottom: 1px solid #bca4ff; */
+  width: 100%;
+}
+.title h4 {
+  padding-bottom: 15px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 106.25% */
+  letter-spacing: 1px;
+}
+.line {
+  width: 1440px;
+  background-color: #bca4ff;
+}
+.destinationForm {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+select {
+  /* width: 100%; */
+  padding: 5px;
+  border-radius: 0.4rem;
+  background-color: #f7f7fc;
+  border-color: #14142b;
+}
+.btnSearch {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  border-radius: 0.5rem;
+  background-color: #ed2e7e;
+  color: #f7f7fc;
+  cursor: pointer;
+}
+.btnSearch:hover {
+  background-color: #ae084d;
+  color: #f7f7fc;
+}
+#destination {
+  width: 474px;
+}
+#check {
+  width: 260px;
+}
+#adult {
+  width: 260px;
+}
+::placeholder {
+  padding-left: 5px;
+  color: #14142b;
+}
+@media (max-width: 500px) {
+  .destinationForm {
+    flex-direction: column;
+  }
+  select {
+  width: 100%;
+}
+ #check, #adult {
+  width: 350px;
+}
+.btnSearch {
+  width: 100%;
+}
+}

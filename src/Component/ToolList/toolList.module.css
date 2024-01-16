@@ -34,6 +34,22 @@
   line-height: 28px; /* 175% */
   letter-spacing: 0.75px;
 }
+@media (max-width: 1028px) {
+  .toolListTop {
+  flex-direction: column;
+}
+.left h4 {
+  width: 325px;
+  height: 108px;
+  font-size: 29px;
+  line-height: 30px; 
+}
+.right p {
+  width: 355px;
+  height: 110px;
+  font-size: 17px;
+}
+}
 @media (max-width: 500px) {
   .toolListTop {
   flex-direction: column;
@@ -122,6 +138,14 @@
   max-width: 270px;
   width: 100%;
   /* width: 180px; */
+}
+@media (max-width: 1028px) {
+  .bottomContainer{
+  flex-direction: column;
+}
+.bottomCard{
+  height: 390px;
+}
 }
 @media (min-width: 800px) {
   .bottomCard{
