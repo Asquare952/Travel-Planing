@@ -42,7 +42,6 @@ const Deals = () => {
           <button className={Styles.btnSearch}>Search</button>
         </form>
       </section>
-      <div className={Styles.line}></div>
     </>
   );
 };

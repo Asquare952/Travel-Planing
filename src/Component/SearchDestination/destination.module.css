@@ -61,8 +61,8 @@ select {
   select {
   width: 100%;
 }
- #check, #adult {
-  width: 350px;
+ #destination,#check, #adult {
+  width: 385px;
 }
 .btnSearch {
   width: 100%;
