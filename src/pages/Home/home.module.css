@@ -1,6 +1,11 @@
 .homePage{
-  max-width: 1400px;
+  max-width: 1200px;
   width: 100%;
-  margin: auto;
+  margin:  auto;
   padding: 0 1rem;
+}
+@media screen and (max-width: 1024px){
+  .homePage{
+  padding: 0 1rem;
+}
 }

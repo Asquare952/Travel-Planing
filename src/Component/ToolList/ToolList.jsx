@@ -31,7 +31,7 @@ const ToolList = () => {
                   <img src={Clock} alt="" className={Styles.imgOne} />
                   <h4>Plan Trip Dates</h4>
                   <p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <button className={Styles.cardBtn}>LEARN MORE</button>
+                  <button className={Styles.cardBtn}>Learn more</button>
                 </div>
               </div>
               <div className={Styles.bottomCard}>
@@ -39,7 +39,7 @@ const ToolList = () => {
                   <img src={PlaneAndMoney} alt="" class="imgTwo" />
                   <h4>Plan Trip Dates</h4>
                   <p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <button className={Styles.cardBtn}>LEARN MORE</button>
+                  <button className={Styles.cardBtn}>Learn more</button>
                 </div>
               </div>
               <div className={Styles.bottomCard}>
@@ -47,7 +47,7 @@ const ToolList = () => {
                   <img src={Money} alt="" class="imgOne" />
                   <h4>Plan Trip Dates</h4>
                   <p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <button className={Styles.cardBtn}>LEARN MORE</button>
+                  <button className={Styles.cardBtn}>Learn more</button>
                 </div>
               </div>
             </div>

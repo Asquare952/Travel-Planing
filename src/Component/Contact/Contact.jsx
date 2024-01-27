@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
-      <section className={Styles.contactContainer} ref={Contact}>
+      <section className={Styles.contactContainer} id="contact">
         <div className={Styles.contactContent}>
           <p className={Styles.para}>Need more information to get started?</p>
           <Link>

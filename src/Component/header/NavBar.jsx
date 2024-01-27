@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
 import { IoCloseSharp } from "react-icons/io5";
 import Styles from "./NavBar.module.css";
@@ -17,17 +17,6 @@ const NavBar = () => {
     setServicesToggle(!servicesToggle);
   };
 
-  const IconStyle = styled(FiMenu)`
-    color: #5f2eea;
-    font-size: 28px;
-    cursor: pointer;
-  `;
-
-  const CloseIcon = styled(IoCloseSharp)`
-    color: #5f2eea;
-    font-size: 28px;
-    cursor: pointer;
-  `;
 
   return (
     <>
@@ -36,9 +25,9 @@ const NavBar = () => {
           <Link to="/">Travelulu</Link>
         </div>
         {menuToggle ? (
-          <CloseIcon onClick={toggler} />
+          <IoCloseSharp className={Styles.closeIcon} onClick={toggler} />
         ) : (
-          <IconStyle onClick={toggler} />
+          <FiMenu className={Styles.menuIcon} onClick={toggler} />
         )}
       </header>
       {/* <hr /> */}
@@ -46,9 +35,9 @@ const NavBar = () => {
         <nav className={Styles.navBarLinks}>
           <ul>
             <li>
-              <Link to="/" className={Styles.navItem}>
+              <a href="/" className={Styles.navItem}>
                 Home
-              </Link>
+              </a>
             </li>
             {servicesToggle ? (
               <li>
@@ -63,57 +52,40 @@ const NavBar = () => {
             {servicesToggle ? (
               <ul className={Styles.servicesItems}>
                 <li>
-                  <Link
-                    className={Styles.navItem}
-                    id="tooList"
-                  >
+                  <a className={Styles.navItem} href="#toolList">
                     Tool List
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    id="photoGallary"
-                    className={Styles.navItem}
-                  >
+                  <a className={Styles.navItem} href="#photoGallery">
                     Photo Gallery
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    
-                    className={Styles.navItem}
-                  >
+                  <a className={Styles.navItem} href="#planingAhead">
                     Planing Ahead
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                   
-                    className={Styles.navItem}
-                  >
+                  <a className={Styles.navItem} href="#testimonals">
                     Testimonals
-                  </Link>
+                  </a>
                 </li>
               </ul>
             ) : null}
 
             <li>
-              <Link to="" className={Styles.navItem}>
+              <a href="" className={Styles.navItem}>
                 Continents
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                
-                className={Styles.navItem}
-              >
-                Contact
-              </Link>
+              <a href="#contact" className={Styles.navItem}>Contact</a>
             </li>
             <li>
-              <Link to="" className={Styles.navItem}>
+              <a href="" className={Styles.navItem}>
                 Privacy
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

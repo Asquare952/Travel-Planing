@@ -16,12 +16,15 @@
   width: 1440px;
   background-color: #bca4ff;
 }
+.formAndSearchResult{
+  display: flex;
+  gap: 5rem;
+}
 .destinationForm {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 369px;
-  width: 20%;
+  /* width: 20%; */
   height: 455px;
   background-color: #2a00a2;
   padding: 20px;
@@ -40,7 +43,7 @@
 }
 .icons{
   position: absolute;
-  top: 2rem;
+  top: .5rem;
   left: .5rem;
   width: 25px;
   color: #14142B;
@@ -71,10 +74,10 @@ label {
 }
 ::placeholder {
   padding-left: 30px;
-  color: #14142B;
+  color: #404079;
 }
-@media (max-width: 500px) {
-  .destinationForm {
+@media screen and (max-width: 500px) {
+  .formAndSearchResult{
     flex-direction: column;
   }
 

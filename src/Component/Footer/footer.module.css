@@ -1,6 +1,13 @@
 .footer {
   padding-bottom: 20px;
 }
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11rem;
+  /* justify-content: space-between; */
+  width: 100%;
+}
 .footerContent ul li {
   list-style: none;
   margin-top: 5px;
@@ -23,11 +30,7 @@
   letter-spacing: 0.75px;
   color: #5f2eea;
 }
-.footerContent {
-  display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: space-between;
-}
+
 /* #footerCol {
   width: 25%;
   padding: 0 15px;

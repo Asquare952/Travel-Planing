@@ -45,8 +45,7 @@
   justify-content: space-between;
 }
 .testimonalCard{
-  max-width: 300px;
-  width: 100%;
+  width: min(100%, 22.1875rem);
   margin: 0 1rem  ;
   border: 1px solid #e4daff;
   padding-bottom: 100px;
@@ -65,7 +64,7 @@
 .testimonalImg {
   position: absolute;
   bottom: 18.5rem;
-  left: 6.6rem;
+  left: 7.5rem;
 }
 .testimonalImg img {
   display: block;
@@ -106,28 +105,10 @@ hr {
   letter-spacing: 0.75px;
   line-height: 30px;
 }
-/* @media (min-width: 800px) {
-  .testimonalCard{
-
-  max-width: 250px;
-  width: 100%;
-}
-} */
 @media (max-width: 500px) {
   .bottomContainer{
   flex-direction: column;
 }
-.testimonalCard{
-  max-width: 400px;
-  width: 100%;
-  /* height: 390px; */
-}
-/* .paraBottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    width: 350px;
-} */
 }
 @media (max-width: 360px) {
   .bottomCard{

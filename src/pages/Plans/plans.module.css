@@ -1,6 +1,11 @@
 .plansPage{
-  max-width: 1400px;
+  max-width: 1500px;
   /* width: 100%; */
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 10rem;
+}
+@media screen and (max-width: 700px){
+  .plansPage{
   padding: 0 1rem;
+}
 }

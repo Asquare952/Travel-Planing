@@ -1,11 +1,14 @@
-import HeroImg from "../../img/boarding.png"
+import HeroImg from "../../img/boarding.png";
 import { Link } from "react-router-dom";
-import Styles from "./hero.module.css"
+import Plane from "../../img/AirplaneTilt.svg";
+import Globe from "../../img/GlobeHemisphereEast.svg";
+import Bicycle from "../../img/Bicycle.svg";
+import Styles from "./hero.module.css";
 const Hero = () => {
   return (
     <>
       {/* parent */}
-      <div className={Styles.heroContainer}>
+      <section className={Styles.heroContainer}>
         {/* flex container */}
         <div className={Styles.heroContent}>
           {/* left */}
@@ -29,8 +32,40 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        <div className={Styles.Review}>
+          <div className={Styles.reviewContent}>
+            <div className={Styles.reviewItem}>
+              <div className={Styles.position}>
+                <div>
+                  <img src={Plane} alt="" className={Styles.img} />
+                </div>
+                <h4>23,973</h4>
+                <p>Travel to over 23 thousand locations around the world.</p>
+              </div>
+            </div>
+            <div className={Styles.reviewItem}>
+              <div className={Styles.position}>
+                <div>
+                  <img src={Globe} alt="" className={Styles.img} />
+                </div>
+                <h4>82,000</h4>
+                <p>Read tens of thousands of reviews of destinations.</p>
+              </div>
+            </div>
+            <div className={Styles.reviewItem}>
+              <div className={Styles.position}>
+                <div>
+                  <img src={Bicycle} alt="" className={Styles.img} />
+                </div>
+                <h4>4,000,000</h4>
+                <p>Visited by millions of travellers every single day.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* flex container */}
-      </div>
+      </section>
       {/* parent */}
     </>
   );

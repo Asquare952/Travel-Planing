@@ -8,14 +8,14 @@
   justify-content: space-between;
   /* align-items: center; */
 }
-.reviewItem {
+.position {
   position: relative;
 }
 .img {
   position: absolute;
   width: 15%;
-  right: 16rem;
-  bottom: 105px;
+  top: .1rem;
+  right: 16.2em;
 }
 .reviewItem h4 {
   height: 50px;
@@ -40,10 +40,10 @@
     margin-top: 25px;
     padding-left: -2rem;
   }
-  .reviewContent {
+  /* .reviewContent {
     flex-direction: column;
-    /* margin-left: -5rem; */
-  }
+    margin-left: -5rem;
+  } */
   .reviewItem h4 {
     font-size: 30px;
   }
